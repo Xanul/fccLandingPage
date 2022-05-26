@@ -1,3 +1,9 @@
+:root {
+    --main-color: rgb(213,43,30);
+    --black-main: rgb(32,30,28);
+    --black-second: rgb(40,38,35);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,7 +12,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Nixie One', cursive;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -25,11 +31,14 @@ header {
 
 .logo img {
     width: 60px;
+    margin-right: 10px;
 }
 
 .logo p {
-    /* font-family: 'RocknRoll One', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--main-color);
 }
 
 nav {
@@ -46,7 +55,81 @@ nav ul li {
     margin-left: 2rem;
 }
 
-nav ul li a {
+.nav-link {
     font-size: 1.8rem;
     text-decoration: none;
+    color: black;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+}
+
+main {
+  background-color: var(--black-main);  
+  color: #fff;
+}
+
+#mainSection {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.mainTitle {
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+    /* color: var(--main-color); */
+}
+
+.mainSubtitle {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.featuresTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+    width: 900px;
+}
+
+.feature {
+    /* border: 1px solid white; */
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: var(--black-second);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+
+.feature i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+}
+
+.feature p {
+    font-size: 1.3rem;
+    text-align: justify;
 }
