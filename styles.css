@@ -20,6 +20,12 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    min-height: 50px;
+    width: 100%;
+    background-color: #fff;
+
 }
 
 .logo {
@@ -69,6 +75,7 @@ nav ul li {
 main {
   background-color: var(--black-main);  
   color: #fff;
+  margin-top: 88px;
 }
 
 #mainSection {
