@@ -2,5 +2,51 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid black; */
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Nixie One', cursive;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo p {
+    /* font-family: 'RocknRoll One', sans-serif; */
+    font-size: 3.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    font-size: 1.8rem;
+    text-decoration: none;
 }
