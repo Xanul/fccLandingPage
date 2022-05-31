@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/b5b313b3df.js"
       crossorigin="anonymous"
@@ -83,9 +86,19 @@
       </section>
       <section id="displayMedia">
         <h2>Bass Central Player</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HfMSVigkETo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HfMSVigkETo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </section>
-      <section id="form">
+      <h3 class="contactTitle">Contact Us</h3>
+      <section id="formSection">
         <div class="contactInfo">
           <p>Bass Central</p>
           <p>Av. Yucatan #20 Col. Centro</p>
@@ -93,7 +106,7 @@
           <p>5523432311</p>
         </div>
         <div class="contactForm">
-          <form action="https://www.freecodecamp.com/email-submit">
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
             <label for="nameInput">
               Name:
               <input type="text" id="nameInput" placeholder="Name" />
@@ -104,7 +117,7 @@
             </label>
             <label for="emailInput">
               E-mail:
-              <input type="email" id="emailInput" placeholder="Email" />
+              <input type="email" id="email" name="email" placeholder="Email" />
             </label>
             <label for="commentsInput">
               Comments:
@@ -112,16 +125,19 @@
                 name="comments"
                 id="commentsInput"
                 cols="30"
-                rows="10"
+                rows="7"
                 placeholder="Comments"
               ></textarea>
+            </label>
+            <label for="submit" class="submitButton">
+                <input type="submit" id="submit">
             </label>
           </form>
         </div>
       </section>
     </main>
     <footer>
-      <div class="footerLogo">Layout by Rodrigo Rivas @Xanul</div>
+      <div class="footerLogo">Layout by Rodrigo Rivas <a href="https://github.com/xanul" target="_blank">@Xanul</a></div>
       <div class="footerLinks">
         <ul>
           <li><a href="#">Contact</a></li>
